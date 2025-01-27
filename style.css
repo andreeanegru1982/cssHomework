@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(imagini/imgtable7.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: Sans, Helvetica, Arial;
+}
+
+li {
+  list-style: none;
+  color: #705454;
+  font-family: Sans, Helvetica, Arial;
+  font-weight: 400;
+  line-height: 1, 5;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+  font-size: 2rem;
+}
+
+a:visited {
+  color: #0b0b0b;
+}
+
+p {
+  font-size: 1, 75rem;
+}
+
+.top {
+  position: relative;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgb(124, 106, 102);
+  box-shadow: 0, 5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.descriere {
+  margin: 100px;
+}
+h2 {
+  text-align: center;
+}
+
+.paragrafe {
+  margin: 100px;
+}
+p {
+  text-align: justify;
+  width: 500px;
+  margin: auto;
+}
+
+#manufactura {
+  margin-top: 600px;
+}
+
+#videoTube {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#videoTube > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+.galerie {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* aranjarea imaginilor*/
+.imagini {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 250px 250px;
+  row-gap: 40px;
+  justify-items: center;
+  height: auto;
+  background-color: transparent;
+  padding: 20px;
+  align-items: baseline;
+  height: 550px;
+}
+
+.imagini > div {
+  border: 5px;
+  padding: 20px;
+}
+
+.contact {
+  margin-top: 100px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+/* css pt butonul Trimite*/
+.buton {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.buton:focus {
+  border-color: #1f1d1d;
+  box-shadow: 0 0 5px #2c2424;
+}
+
+/* css pt adresa de email*/
+#email {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #1f1d1d;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#email:focus {
+  border-color: #1f1d1d;
+  box-shadow: 0 0 5px #2c2424;
+}
+
+#email::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.footer {
+  background-color: #705454;
+  color: white;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  text-align: right;
+}
